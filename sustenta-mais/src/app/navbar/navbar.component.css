@@ -1,3 +1,7 @@
+.outnone, .hamburguer{
+    outline: none;
+}
+
 .btn-sustenta{
     display: inline-block;
     font-weight: 400;
@@ -21,16 +25,15 @@
 .menu{
     background-color: #8BBA34;
     border-radius: 0 0 50px 50px;  
-    box-shadow: 0px 3px 2px 0 #777777;     
+    box-shadow: 0px 3px 2px 0 #666666;     
 }
 
 .hamburguer{
-    border: none; 
-	outline: none;   
+    border: none; 	   
 }
 
 
-.menu > .logo{
+.menu > .logo, .lupa{
     background-image: url("../../assets/logos/logo_aberto_preto.png");
 
     min-height: 100px;
@@ -39,4 +42,64 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.menu > .logo:hover{
+    background-image: url("../../assets/logos/logo_aberto_branco.png");
+
+    min-height: 100px;
+    min-width: 200px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-menu {
+    width: 100%;
+}
+
+.form-menu > input {
+    width: 80%;
+}
+
+.lupa{
+    background-image: url("../../assets/logos/lupa_preta.png");
+
+    min-height: 33px;
+    min-width: 33px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lupa:hover{
+    background-image: url("../../assets/logos/lupa_branca.png");
+
+    min-height: 33px;
+    min-width: 33px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ul-menu{    
+    width: 45%;
+    display: flex;
+    flex-flow: row nowrap;  
+    justify-content: space-around;     
+    align-items: flex-end;
+    margin-right: 15%;
+    padding: 10px;
+}
+
+.ul-menu > li > a{
+    border-radius: 5px;   
+    color: #000000;   
+    font-size: 1.2em; 
+    padding: 0 20px 0 20px;
+}
+.ul-menu > li:hover a{      
+    color: #ffffff;
+    box-shadow: 0px 3px 0px 0 #ffffff;
 }

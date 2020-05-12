@@ -1,6 +1,6 @@
-<header class="container-fluid py-1">
+<header class="container-fluid p-0 my-0">
 
-    <nav class="menu container navbar navbar-expand-lg navbar-light d-flex">
+    <nav class="menu py-0 px-5 my-0 container-fluid navbar navbar-expand-lg navbar-light d-flex">
 
         <button class="hamburguer navbar-toggler" type="button" data-toggle="collapse"
             data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
@@ -11,37 +11,31 @@
         <a class="logo navbar-brand mx-auto" routerLink='/home'></a>
 
         <div class="collapse navbar-collapse " id="conteudoNavbarSuportado">
-            <div class="navbar-nav d-flex mx-auto flex-column justify-content-center align-items-center">
+            <div class="form-menu navbar-nav mt-3 d-flex mx-auto flex-column justify-content-center align-items-center">
 
-                <form id="form-menu" class="form-inline justify-content-center align-items-center my-2 my-lg-0">
+                <div class="form-menu form-inline justify-content-center align-items-center my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
-                    <button class="btn-sustenta" type="submit">
-                        <img src="../../assets/logos/lupa_preta.png" width="30" height="30" alt="">
+                    <button class="btn-sustenta p-0" type="button">
+                        <div class="mx-1 lupa"></div>
                     </button>
-                </form>
+                </div>
 
-                <ul id="ul-menu " class="navbar-nav">
-                    <li class="nav-item ">
-                        <a class="nav-link" routerLink='/home'>Sobre Nós</a>
+                <ul class="ul-menu navbar-nav">
+                    <li class="nav-item outnone">
+                        <a class="nav-link" routerLink='/home'>Home</a>
                     </li>
-                    <li class="nav-item ">
+                    <!-- <li class="nav-item outnone">
                         <a class="nav-link" routerLink='/home'>Produtos</a>
-                    </li>
-                    <li class="nav-item ">
+                    </li> -->
+                    <li class="nav-item outnone">
                         <a class="nav-link" routerLink='/contato'>Contato</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" routerLink='/faq'>FAQ</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" routerLink='/politica'>Politica</a>
                     </li>
                 </ul>
             </div>
 
         </div>
 
-        <div class="mx-auto ">
+        <div class="mx-auto mb-2">
             <button class="btn-sustenta m-1" type="button"> Logar </button>
             <button class="btn-sustenta m-1" type="button"> Cadastrar </button>
         </div>

@@ -1,0 +1,27 @@
+.footer{
+    background-color: #658726;
+    border-radius: 50px 50px 0 0;  
+    box-shadow: 0px 0px 2px 3px #666666;     
+    
+}
+
+.footer > .logo{
+    background-image: url("../../assets/logos/logo_aberto_preto.png");
+
+    min-height: 50px;
+    min-width: 100px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer > .logo:hover{
+    background-image: url("../../assets/logos/logo_aberto_branco.png");
+
+    min-height: 50px;
+    min-width: 100px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
