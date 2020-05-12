@@ -1,0 +1,42 @@
+.btn-sustenta{
+    display: inline-block;
+    font-weight: 400;
+    color: #000000;
+    box-shadow: 0 3px 0 0 #000000;
+    text-align: center;
+    cursor: pointer;     
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+.btn-sustenta:hover{  
+    border: 1px solid #ffffff;        
+    color: #ffffff;
+    box-shadow: 0 3px 0 0 #ffffff;
+}
+
+.menu{
+    background-color: #8BBA34;
+    border-radius: 0 0 50px 50px;  
+    box-shadow: 0px 3px 2px 0 #777777;     
+}
+
+.hamburguer{
+    border: none; 
+	outline: none;   
+}
+
+
+.menu > .logo{
+    background-image: url("../../assets/logos/logo_aberto_preto.png");
+
+    min-height: 100px;
+    min-width: 200px;   
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
