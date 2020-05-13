@@ -1,0 +1,14 @@
+body{
+    background-color: #ececec;
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    background-color: #ececec;
+    border: hidden;
+}
+
+

@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "sustenta-mais"
+  "defaultProject": "sustenta-mais",
+  "cli": {
+    "analytics": false
+  }
 }
