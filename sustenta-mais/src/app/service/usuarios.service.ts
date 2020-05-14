@@ -8,8 +8,8 @@ export class UsuariosService {
 
   constructor(private http: HttpClient) { }
 
-  getAllUsuario(){
-    return this.http.get('http://31.220.57.14/8080/user')
+  getAllUsuarios(){
+    return this.http.get('http://93.188.161.223:9000/user')
   }
 
 }
