@@ -10,6 +10,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { PoliticaComponent } from './politica/politica.component';
 import { FaqComponent } from './faq/faq.component';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
