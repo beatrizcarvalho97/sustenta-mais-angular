@@ -10,6 +10,9 @@ import { ContatoComponent } from './contato/contato.component';
 import { PoliticaComponent } from './politica/politica.component';
 import { FaqComponent } from './faq/faq.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
+import { HttpClientModule } from '@angular/common/http'
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     ContatoComponent,
     PoliticaComponent,
     FaqComponent,
-    CadastroComponent
+    CadastroComponent,
+    ListaUsuariosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
