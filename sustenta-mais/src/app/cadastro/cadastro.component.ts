@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { UsuariosService } from '../service/usuarios.service';
+import { Usuarios } from '../model/Usuarios';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
-  constructor() { }
+  usuario: Usuarios = new Usuarios
+
+  confirmaSenha = "";
+
+  constructor(
+    private usuarioService: UsuariosService,
+    private router: Router
+    ) { }
 
   ngOnInit(): void {
   }
 
+  validaForm(){
+    if(this.usuario.senha == this.confirmaSenha){
+      this.cadastroUsuario()
+    }else{
+      alert("As senhas não correspondem.")
+    }
+  }
+
+  cadastroUsuario() {
+    this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuarios) => {
+      this.usuario = resp
+      this.router.navigate(["lista-usuarios"])
+    })
+  }
 }
