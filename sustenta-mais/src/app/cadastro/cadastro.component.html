@@ -35,10 +35,13 @@
                 <div class="alert alert-danger mt-2" *ngIf="!confirma.valid && confirma.touched">
                     Confirmar Senha é obrigatório
                 </div>
+                <div class="alert alert-danger mt-2" *ngIf="confirma.value != senha.value">
+                    As senhas não correspondem
+                </div>
             </div>
             
             <div class="col-md-12 mb-4 mt-4 d-flex justify-content-center">
-                <button type="button" class="btn btn-success col-md-12" (click)="validaForm()">Cadastrar</button>
+                <button type="button" class="btn btn-success col-md-12" (click)="cadastroUsuario()">Cadastrar</button>
             </div>
         </div>
     </div>
