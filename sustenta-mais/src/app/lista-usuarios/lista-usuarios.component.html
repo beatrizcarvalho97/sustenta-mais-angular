@@ -1,5 +1,11 @@
-<section class="container mb-5 mt-5">
+<section class="container mb-5 mt-5 form-group w-100">
     <table class="table">
+      <div *ngIf = 'alerta'>
+        <div class="alert alert-success" role="alert">
+          Usuario deletado
+        </div>
+      </div>
+      
         <thead class="thead-dark">
           <tr>
             <th scope="col">Id</th>
@@ -16,5 +22,6 @@
             <td>{{ usuario.senha }}</td>
           </tr>
         </tbody>
+        <button class="btn btn-outline-danger" [routerLink] = "['/deletar',postagem.id]">Apagar</button>
       </table>
 </section>

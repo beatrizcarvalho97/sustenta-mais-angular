@@ -1,1 +1,25 @@
-<p>deletar-usuario works!</p>
+<section class="container mb-5 mt-5 form-group w-100">
+    <h3 class="d-flex justify-content-center">Deletar</h3>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let usuario of usuarios">
+            <th scope="row">{{ usuario.id }}</th>
+            <td>{{ usuario.nome }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.senha }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="mt-5 mb-5">
+      <div class="col-md-12 d-flex justify-content-center">
+        <button class="btn btn-outline-danger mr-3">Sim</button>
+        <button class="btn btn-outline-success">Não</button>
+      </div>
+</section>
