@@ -1,15 +1,18 @@
 <section class="container mb-5 mt-5 form-group w-100">
-    <h3 class="d-flex justify-content-center">Deletar</h3>
+  <div class="card-title">
+    <h5 class="d-flex justify-content-center">Deletar Usuario</h5>
+  </div>
     <table class="table">
         <thead class="thead-dark">
           <tr>
             <th scope="col">Id</th>
             <th scope="col">Nome</th>
             <th scope="col">E-mail</th>
+            <th scope="col">Senha</th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let usuario of usuarios">
+          <tr>
             <th scope="row">{{ usuario.id }}</th>
             <td>{{ usuario.nome }}</td>
             <td>{{ usuario.email }}</td>
@@ -18,8 +21,13 @@
         </tbody>
       </table>
       <hr class="mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-12">
+            <h5 class="text-monospace text-center mb-5">Tem certeza que deseja apagar o usuário <i>{{ usuario.nome }}</i>?</h5>
+        </div>
+      </div>
       <div class="col-md-12 d-flex justify-content-center">
-        <button class="btn btn-outline-danger mr-3">Sim</button>
-        <button class="btn btn-outline-success">Não</button>
+        <button class="btn btn-outline-danger mr-3" (click)="deletarUsuario()">Sim</button>
+        <button class="btn btn-outline-success" (click)="naoDeletar()">Não</button>
       </div>
 </section>
