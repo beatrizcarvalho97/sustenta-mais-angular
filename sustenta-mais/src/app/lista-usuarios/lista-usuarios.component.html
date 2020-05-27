@@ -1,17 +1,12 @@
 <section class="container mb-5 mt-5 form-group w-100">
     <table class="table">
-      <div *ngIf = 'alerta'>
-        <div class="alert alert-success" role="alert">
-          Usuario deletado
-        </div>
-      </div>
-      
         <thead class="thead-dark">
           <tr>
             <th scope="col">Id</th>
             <th scope="col">Nome</th>
             <th scope="col">E-mail</th>
             <th scope="col">Senha</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -20,8 +15,10 @@
             <td>{{ usuario.nome }}</td>
             <td>{{ usuario.email }}</td>
             <td>{{ usuario.senha }}</td>
+            <td>
+              <button class="btn btn-outline-danger" [routerLink] = "['/deletar',usuario.id]">Apagar</button>
+            </td>
           </tr>
         </tbody>
-        <button class="btn btn-outline-danger" [routerLink] = "['/deletar',postagem.id]">Apagar</button>
       </table>
 </section>

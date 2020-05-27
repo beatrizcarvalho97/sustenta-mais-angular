@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuarios } from '../model/Usuarios';
 
 @Component({
   selector: 'app-deletar-usuario',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./deletar-usuario.component.css']
 })
 export class DeletarUsuarioComponent implements OnInit {
+
+  usuarios: Usuarios = new Usuarios
 
   constructor() { }
 
