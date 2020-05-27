@@ -12,7 +12,9 @@ import { FaqComponent } from './faq/faq.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
 import { HttpClientModule } from '@angular/common/http'
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
+import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FormsModule } from '@angular/forms'
     PoliticaComponent,
     FaqComponent,
     CadastroComponent,
-    ListaUsuariosComponent
+    ListaUsuariosComponent,
+    EditarUsuarioComponent,
+    DeletarUsuarioComponent
   ],
   imports: [
     BrowserModule,

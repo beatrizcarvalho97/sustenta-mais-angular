@@ -6,6 +6,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { FaqComponent } from './faq/faq.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { ListaUsuariosComponent } from './lista-usuarios/lista-usuarios.component';
+import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
+import { DeletarUsuarioComponent } from './deletar-usuario/deletar-usuario.component';
 
 
 const routes: Routes = [
@@ -15,7 +17,9 @@ const routes: Routes = [
   { path: 'politica', component: PoliticaComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'cadastro', component: CadastroComponent },
-  { path: 'lista-usuarios', component: ListaUsuariosComponent }
+  { path: 'lista-usuarios', component: ListaUsuariosComponent },
+  { path: 'editar/:id', component: EditarUsuarioComponent },
+  { path: 'deletar/:id', component: DeletarUsuarioComponent }
 ];
 
 @NgModule({
