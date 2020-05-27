@@ -18,11 +18,11 @@ export class UsuariosService {
   }
 
 
-  putPostagem(usuario: Usuarios) {
+  putUsuario(usuario: Usuarios) {
     return this.http.put('http://93.188.161.223:9000/user', usuario)
   }
 
-  deletePostagem(id: number) {
+  deleteUsuario(id: number) {
     return this.http.delete(`http://93.188.161.223:9000/user/${id}`)
   }
 
