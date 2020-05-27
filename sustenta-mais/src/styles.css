@@ -2,3 +2,28 @@
 .height-min{
     min-height: 100vh;
 }
+
+.outnone{
+    outline: none;
+}
+
+.btn-sustenta{
+    display: inline-block;
+    font-weight: 400;
+    color: #000000;
+    box-shadow: 0 3px 0 0 #000000;
+    text-align: center;
+    cursor: pointer;     
+    background-color: transparent;
+    border: 1px solid #000000;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    opacity: 0.7;   
+}
+.btn-sustenta:hover{  
+    border: 1px solid #8BBA34;        
+    color: #8BBA34;
+    box-shadow: 0 3px 0 0 #8BBA34;
+}
