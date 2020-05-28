@@ -1,4 +1,10 @@
 <section class="container mb-5 mt-5 form-group w-100">
+    <div *ngIf="alerta">
+      <div class="alert alert-success" role="alert">
+          Usuário deletado com sucesso!
+      </div>
+    </div>
+    <h3 class="text-monospace text-center mb-5">Usuários</h3>
     <table class="table">
         <thead class="thead-dark">
           <tr>

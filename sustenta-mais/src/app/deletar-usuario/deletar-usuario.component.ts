@@ -12,6 +12,7 @@ export class DeletarUsuarioComponent implements OnInit {
 
   usuario: Usuarios = new Usuarios
   delOk: boolean = false;
+  alerta: boolean = false
 
   constructor(private usuarioService: UsuariosService, private route: ActivatedRoute, private router: Router) { }
 
