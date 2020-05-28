@@ -13,6 +13,7 @@
             <th scope="col">E-mail</th>
             <th scope="col">Senha</th>
             <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -21,6 +22,9 @@
             <td>{{ usuario.nome }}</td>
             <td>{{ usuario.email }}</td>
             <td>{{ usuario.senha }}</td>
+            <td>
+              <button class="btn btn-outline-success" [routerLink] = "['/editar',usuario.id]">Editar</button>
+            </td>
             <td>
               <button class="btn btn-outline-danger" [routerLink] = "['/deletar',usuario.id]">Apagar</button>
             </td>
