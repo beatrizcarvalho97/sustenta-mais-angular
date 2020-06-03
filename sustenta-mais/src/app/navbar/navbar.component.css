@@ -13,8 +13,8 @@
     background-image: url("../../assets/logos/logo_aberto_preto.png");
     opacity: 0.7;
 
-    min-height: 60px;
-    min-width: 150px;   
+    min-height: 67px;
+    min-width: 200px;   
     
     background-position: center;
     background-repeat: no-repeat;
@@ -23,22 +23,16 @@
 .logo:hover{
     background-image: url("../../assets/logos/logo_aberto_verde.png");
 
-    min-height: 60px;
-    min-width: 150px;   
+    min-height: 67px;
+    min-width: 200px;   
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.ul-menu{    
-    width: 45%;
-    display: flex;
-    flex-flow: row nowrap;  
-    justify-content: space-around;     
-    align-items: flex-end;
-    margin-right: 15%;
-    padding: 10px;
+.list{
+    font-size: 20px;
 }
 
 /*.form-menu {

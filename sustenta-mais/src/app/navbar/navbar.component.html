@@ -1,9 +1,9 @@
 <!-- navbar rpg para sustenta mais -->
 
 <header class="container-fluid py-0 px-0">
-    <div class=" menu container-fluid py-2 px-0 mb-2">
+    <div class=" menu container-fluid py-3 px-5 mb-1">
 
-        <nav class="container-xl navbar navbar-expand-lg text-light navbar-light bg-light rounded-pill px-5 d-flex">
+        <nav class="navbar navbar-expand-lg text-light navbar-light bg-light rounded-lg px-5 d-flex">
 
             <button class="hamburguer navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
@@ -14,25 +14,21 @@
 
             <a class="logo navbar-brand mx-auto" routerLink='/home'></a>
 
-
-            <button class="hamburguer outnone navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-            </button>
-
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                <div class="navbar-nav d-flex mx-auto justify-content-center align-items-center">
-                    <a class="outnone nav-link p-3 text-uppercase " routerLink='/home'>Home</a>
+                <div class=" w-100 d-flex  justify-content-center">
+                    <div class="navbar-nav d-flex w-75 justify-content-around align-items-center">
+                        <a class="list outnone nav-link p-3 text-uppercase" routerLink='/home'>Home</a>
 
-                    <a class="outnone nav-link p-3 text-uppercase " routerLink='/produto'>Produtos</a>
+                        <a class="list outnone nav-link p-3 text-uppercase" routerLink='/produto'>Produtos</a>
 
-                    <a class="outnone nav-link p-3 text-uppercase " routerLink='/contato'>Contato</a>
+                        <a class="list outnone nav-link p-3 text-uppercase" routerLink='/contato'>Contato</a>
+                    </div>
                 </div>
             </div>
 
             <div class="mx-auto mb-2">
-                <button class="btn-sustenta m-1 rounded-pill" type="button"> Logar </button>
-                <button class="btn-sustenta m-1 rounded-pill" type="button" routerLink='/cadastro'> Cadastrar </button>
+                <button class="btn-sustenta m-1 " type="button"> Logar </button>
+                <button class="btn-sustenta m-1 " type="button" routerLink='/cadastro'> Cadastrar </button>
             </div>
 
         </nav>
