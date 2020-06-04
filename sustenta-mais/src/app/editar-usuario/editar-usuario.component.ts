@@ -28,6 +28,12 @@ export class EditarUsuarioComponent implements OnInit {
     })
   }
 
+  validaSenha(){
+    if(this.usuario.senha == this.confirmaSenha){
+      this.salvar()
+    }
+  }
+
   salvar(){
     this.usuarioService.putUsuario(this.usuario).subscribe((resp: Usuarios)=>{
       this.usuario = resp

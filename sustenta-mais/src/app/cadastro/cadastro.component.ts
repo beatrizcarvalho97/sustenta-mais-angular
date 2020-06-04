@@ -22,6 +22,12 @@ export class CadastroComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  validaSenha(){
+    if(this.usuario.senha == this.confirmaSenha){
+      this.cadastroUsuario()
+    }
+  }
+
   cadastroUsuario() {
     this.usuarioService.postUsuario(this.usuario).subscribe((resp: Usuarios) => {
       this.usuario = resp

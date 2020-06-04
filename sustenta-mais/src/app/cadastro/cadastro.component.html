@@ -24,6 +24,7 @@
             <div class="form-group col-md-12">
                 <label for="senha">Senha</label>
                 <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" [(ngModel)]="usuario.senha" required #senha="ngModel">
+                <span class="olho"></span>
                 <div class="alert alert-danger mt-2" *ngIf="!senha.valid && senha.touched">
                     Senha é obrigatório
                 </div>
@@ -41,7 +42,7 @@
             </div>
             
             <div class="col-md-12 mb-4 mt-4 d-flex justify-content-center">
-                <button type="button" class="btn btn-success col-md-12" (click)="cadastroUsuario()">Cadastrar</button>
+                <button type="button" class="btn btn-success col-md-12" (click)="validaSenha()">Cadastrar</button>
             </div>
         </div>
     </div>
